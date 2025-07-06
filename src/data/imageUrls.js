@@ -1,0 +1,35 @@
+// src/data/imageUrls.js
+const imageUrls = [
+  "https://fakerestaurantapi.runasp.net/images/afghan%20kebabs.jpg",
+  "https://fakerestaurantapi.runasp.net/images/bagara%20baigan.webp",
+  "https://fakerestaurantapi.runasp.net/images/butter%20chicken.jpg",
+  "https://fakerestaurantapi.runasp.net/images/dal%20makhni.jpg",
+  "https://fakerestaurantapi.runasp.net/images/tandoori%20roti.jpg",
+  "https://fakerestaurantapi.runasp.net/images/malai%20kofta.jpg",
+  "https://fakerestaurantapi.runasp.net/images/paneer%20butter%20masala.jpg",
+  "https://fakerestaurantapi.runasp.net/images/chicken%20tikka.jpg",
+  "https://fakerestaurantapi.runasp.net/images/fish%20curry.jpg",
+  "https://fakerestaurantapi.runasp.net/images/chole%20bhature.jpg",
+  "https://fakerestaurantapi.runasp.net/images/veg%20biryani.jpg",
+  "https://fakerestaurantapi.runasp.net/images/chicken%20biryani.jpg",
+  "https://fakerestaurantapi.runasp.net/images/kadhai%20paneer.jpg",
+  "https://fakerestaurantapi.runasp.net/images/mutton%20rogan%20josh.jpg",
+  "https://fakerestaurantapi.runasp.net/images/rajma%20chawal.jpg",
+  "https://fakerestaurantapi.runasp.net/images/naan.jpg",
+  "https://fakerestaurantapi.runasp.net/images/egg%20curry.jpg",
+  "https://fakerestaurantapi.runasp.net/images/hyderabadi%20biryani.jpg",
+  "https://fakerestaurantapi.runasp.net/images/shahi%20paneer.jpg",
+  "https://fakerestaurantapi.runasp.net/images/gulab%20jamun.jpg",
+  "https://fakerestaurantapi.runasp.net/images/rasgulla.jpg",
+  "https://fakerestaurantapi.runasp.net/images/ice%20cream.jpg",
+  "https://fakerestaurantapi.runasp.net/images/rasmalai.jpg",
+  "https://fakerestaurantapi.runasp.net/images/kheer.jpg",
+  "https://fakerestaurantapi.runasp.net/images/lassi.jpg",
+  "https://fakerestaurantapi.runasp.net/images/tea.jpg",
+  "https://fakerestaurantapi.runasp.net/images/coffee.jpg",
+  "https://fakerestaurantapi.runasp.net/images/mango%20shake.jpg",
+  "https://fakerestaurantapi.runasp.net/images/butter%20naan.jpg",
+  "https://fakerestaurantapi.runasp.net/images/samosa.jpg"
+];
+
+export default imageUrls;

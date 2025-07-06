@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "name": "Aditi Mehra",
+    "photo": "https://randomuser.me/api/portraits/women/65.jpg",
+    "review": "Absolutely loved the ambiance and the service. The food was authentic and flavorful!"
+  },
+  {
+    "id": 2,
+    "name": "Rahul Verma",
+    "photo": "https://randomuser.me/api/portraits/men/32.jpg",
+    "review": "A great place for family dinner. The biryani was perfectly spiced and the kebabs were juicy."
+  },
+  {
+    "id": 3,
+    "name": "Sanya Kapoor",
+    "photo": "https://randomuser.me/api/portraits/women/48.jpg",
+    "review": "The decor is stunning, and the rooftop view made the experience unforgettable. Highly recommended!"
+  },
+  {
+    "id": 4,
+    "name": "Karan Desai",
+    "photo": "https://randomuser.me/api/portraits/men/76.jpg",
+    "review": "Friendly staff and quick service. Tried their Gujarati thali – it was amazing!"
+  },
+  {
+    "id": 5,
+    "name": "Neha Sharma",
+    "photo": "https://randomuser.me/api/portraits/women/21.jpg",
+    "review": "Every dish had a unique taste. The desserts were the highlight. Will visit again!"
+  },
+  {
+    "id": 6,
+    "name": "Vikram Reddy",
+    "photo": "https://randomuser.me/api/portraits/men/43.jpg",
+    "review": "Perfect weekend spot. Loved the seafood platter – fresh and well-prepared."
+  },
+  {
+    "id": 7,
+    "name": "Priya Iyer",
+    "photo": "https://randomuser.me/api/portraits/women/30.jpg",
+    "review": "Very clean and cozy. The service was a bit slow, but the food made up for it."
+  },
+  {
+    "id": 8,
+    "name": "Arjun Malhotra",
+    "photo": "https://randomuser.me/api/portraits/men/15.jpg",
+    "review": "The South Indian dishes here taste just like home. The dosa was crisp and the sambhar flavorful."
+  },
+  {
+    "id": 9,
+    "name": "Meera Joshi",
+    "photo": "https://randomuser.me/api/portraits/women/84.jpg",
+    "review": "An excellent place to host a birthday. The staff made the event special!"
+  },
+  {
+    "id": 10,
+    "name": "Dev Singh",
+    "photo": "https://randomuser.me/api/portraits/men/61.jpg",
+    "review": "I wasn’t expecting such quality from a small place. Every bite was delightful."
+  },
+  {
+    "id": 11,
+    "name": "Ritika Das",
+    "photo": "https://randomuser.me/api/portraits/women/12.jpg",
+    "review": "The Thai food here is top-notch. The green curry and sticky rice combo is a must-try."
+  },
+  {
+    "id": 12,
+    "name": "Manoj Kulkarni",
+    "photo": "https://randomuser.me/api/portraits/men/58.jpg",
+    "review": "Visited during lunch hour. Despite the rush, the staff handled everything smoothly."
+  }
+]
+

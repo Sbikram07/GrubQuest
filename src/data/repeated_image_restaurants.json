@@ -1,0 +1,282 @@
+[
+  {
+    "restaurantID": 26,
+    "restaurantName": "1135 AD",
+    "address": "Jaipur, Amber Fort, Rajasthan",
+    "type": "Rajasthani",
+    "parkingLot": true,
+    "restaurantImage": "https://yometro.com/images/places/1135-ad-amer.jpg"
+  },
+  {
+    "restaurantID": 25,
+    "restaurantName": "6 Ballygunge Place",
+    "address": "Kolkata, Ballygunge, West Bengal",
+    "type": "Bengali Cuisine",
+    "parkingLot": true,
+    "restaurantImage": "https://6ballygungeplace.in/images/am-4.jpg"
+  },
+  {
+    "restaurantID": 29,
+    "restaurantName": "Agashiye",
+    "address": "Ahmedabad, House of MG, Gujarat",
+    "type": "Gujarati",
+    "parkingLot": true,
+    "restaurantImage": "https://houseofmg.com/cdn/shop/files/HOUSE_OF_MG_HTA_48_WEB_BANNER.jpg"
+  },
+  {
+    "restaurantID": 9,
+    "restaurantName": "Alhamdulillah Hotel",
+    "address": "Hyderabad, Sultan Shahi, Telangana",
+    "type": "Mughlai",
+    "parkingLot": false,
+    "restaurantImage": "https://q-xx.bstatic.com/xdata/images/hotel/max500/301078538.jpg"
+  },
+  {
+    "restaurantID": 4,
+    "restaurantName": "Bawarchi",
+    "address": "Hyderabad, RTC Cross Road, Telangana",
+    "type": "Biryani",
+    "parkingLot": true,
+    "restaurantImage": "https://b.zmtcdn.com/data/pictures/1/20061/5e6c5bd3dbbd19cd161bb4a45361676e.jpg"
+  },
+  {
+    "restaurantID": 22,
+    "restaurantName": "Benjarong",
+    "address": "Chennai, Alwarpet, Tamil Nadu",
+    "type": "Thai",
+    "parkingLot": true,
+    "restaurantImage": "https://hungryforever.net/wp-content/uploads/2015/07/benjarong.jpg"
+  },
+  {
+    "restaurantID": 16,
+    "restaurantName": "Britannia & Co.",
+    "address": "Mumbai, Ballard, Maharashtra",
+    "type": "Parsi Cuisine",
+    "parkingLot": false,
+    "restaurantImage": "https://images.squarespace-cdn.com/content/v1/5fcdc5e73b4ad40d4a7d6900/1608618985403-ZTV3MN0WIQW2KHHHTBTV/Britannia2015copyrightIvoDaskalov.jpg"
+  },
+  {
+    "restaurantID": 11,
+    "restaurantName": "Bukhara",
+    "address": "Delhi, Chanakyapuri, Delhi",
+    "type": "North Indian",
+    "parkingLot": true,
+    "restaurantImage": "https://media.gettyimages.com/id/1228178092/photo/employees-wearing-protective-masks-and-face-shields-clean-inside-the-bukhara-restaurant-at.jpg"
+  },
+  {
+    "restaurantID": 20,
+    "restaurantName": "Dakshin",
+    "address": "Chennai, ITC Grand Chola, Tamil Nadu",
+    "type": "South Indian",
+    "parkingLot": true,
+    "restaurantImage": "https://cdn.tasteatlas.com/images/restaurants/ec9ff5c3a72940babcf30df0d9ce9e75.jpg"
+  },
+  {
+    "restaurantID": 31,
+    "restaurantName": "Gopi Dining Hall",
+    "address": "Ahmedabad, Ashram Road, Gujarat",
+    "type": "Gujarati Thali",
+    "parkingLot": false,
+    "restaurantImage": "https://b.zmtcdn.com/data/pictures/0/18338820/84d936058e176829a64540044b4d120c.jpg"
+  },
+  {
+    "restaurantID": 10,
+    "restaurantName": "Grand Hotel",
+    "address": "Hyderabad, Abids, Telangana",
+    "type": "Multi-cuisine",
+    "parkingLot": true,
+    "restaurantImage": "https://assets.simplotel.com/simplotel/image/upload/x_0,y_63,w_1200,h_674,r_0,c_crop,q_80,fl_progressive/w_910,f_auto,c_fit/hotel-hyderabad-grand-shamshabad/HG6A4943_fh2evw"
+  },
+  {
+    "restaurantID": 12,
+    "restaurantName": "Indian Accent",
+    "address": "Delhi, Lodhi, Delhi",
+    "type": "Modern Indian",
+    "parkingLot": true,
+    "restaurantImage": "https://static.wixstatic.com/media/bbc2f7_95e7d6788a2642b6adc1a6b200b647d6~mv2.jpg/"
+  },
+  {
+    "restaurantID": 13,
+    "restaurantName": "Restaurant 13",
+    "address": "India",
+    "type": "Cuisine",
+    "parkingLot": true,
+    "restaurantImage": "https://yometro.com/images/places/1135-ad-amer.jpg"
+  },
+  {
+    "restaurantID": 14,
+    "restaurantName": "Restaurant 14",
+    "address": "India",
+    "type": "Cuisine",
+    "parkingLot": true,
+    "restaurantImage": "https://6ballygungeplace.in/images/am-4.jpg"
+  },
+  {
+    "restaurantID": 15,
+    "restaurantName": "Restaurant 15",
+    "address": "India",
+    "type": "Cuisine",
+    "parkingLot": true,
+    "restaurantImage": "https://houseofmg.com/cdn/shop/files/HOUSE_OF_MG_HTA_48_WEB_BANNER.jpg"
+  },
+  {
+    "restaurantID": 16,
+    "restaurantName": "Restaurant 16",
+    "address": "India",
+    "type": "Cuisine",
+    "parkingLot": true,
+    "restaurantImage": "https://q-xx.bstatic.com/xdata/images/hotel/max500/301078538.jpg"
+  },
+  {
+    "restaurantID": 17,
+    "restaurantName": "Restaurant 17",
+    "address": "India",
+    "type": "Cuisine",
+    "parkingLot": true,
+    "restaurantImage": "https://b.zmtcdn.com/data/pictures/1/20061/5e6c5bd3dbbd19cd161bb4a45361676e.jpg"
+  },
+  {
+    "restaurantID": 18,
+    "restaurantName": "Restaurant 18",
+    "address": "India",
+    "type": "Cuisine",
+    "parkingLot": true,
+    "restaurantImage": "https://hungryforever.net/wp-content/uploads/2015/07/benjarong.jpg"
+  },
+  {
+    "restaurantID": 19,
+    "restaurantName": "Restaurant 19",
+    "address": "India",
+    "type": "Cuisine",
+    "parkingLot": true,
+    "restaurantImage": "https://images.squarespace-cdn.com/content/v1/5fcdc5e73b4ad40d4a7d6900/1608618985403-ZTV3MN0WIQW2KHHHTBTV/Britannia2015copyrightIvoDaskalov.jpg"
+  },
+  {
+    "restaurantID": 20,
+    "restaurantName": "Restaurant 20",
+    "address": "India",
+    "type": "Cuisine",
+    "parkingLot": true,
+    "restaurantImage": "https://media.gettyimages.com/id/1228178092/photo/employees-wearing-protective-masks-and-face-shields-clean-inside-the-bukhara-restaurant-at.jpg"
+  },
+  {
+    "restaurantID": 21,
+    "restaurantName": "Restaurant 21",
+    "address": "India",
+    "type": "Cuisine",
+    "parkingLot": true,
+    "restaurantImage": "https://cdn.tasteatlas.com/images/restaurants/ec9ff5c3a72940babcf30df0d9ce9e75.jpg"
+  },
+  {
+    "restaurantID": 22,
+    "restaurantName": "Restaurant 22",
+    "address": "India",
+    "type": "Cuisine",
+    "parkingLot": true,
+    "restaurantImage": "https://b.zmtcdn.com/data/pictures/0/18338820/84d936058e176829a64540044b4d120c.jpg"
+  },
+  {
+    "restaurantID": 23,
+    "restaurantName": "Restaurant 23",
+    "address": "India",
+    "type": "Cuisine",
+    "parkingLot": true,
+    "restaurantImage": "https://assets.simplotel.com/simplotel/image/upload/x_0,y_63,w_1200,h_674,r_0,c_crop,q_80,fl_progressive/w_910,f_auto,c_fit/hotel-hyderabad-grand-shamshabad/HG6A4943_fh2evw"
+  },
+  {
+    "restaurantID": 24,
+    "restaurantName": "Restaurant 24",
+    "address": "India",
+    "type": "Cuisine",
+    "parkingLot": true,
+    "restaurantImage": "https://static.wixstatic.com/media/bbc2f7_95e7d6788a2642b6adc1a6b200b647d6~mv2.jpg/"
+  },
+  {
+    "restaurantID": 25,
+    "restaurantName": "Restaurant 25",
+    "address": "India",
+    "type": "Cuisine",
+    "parkingLot": true,
+    "restaurantImage": "https://yometro.com/images/places/1135-ad-amer.jpg"
+  },
+  {
+    "restaurantID": 26,
+    "restaurantName": "Restaurant 26",
+    "address": "India",
+    "type": "Cuisine",
+    "parkingLot": true,
+    "restaurantImage": "https://6ballygungeplace.in/images/am-4.jpg"
+  },
+  {
+    "restaurantID": 27,
+    "restaurantName": "Restaurant 27",
+    "address": "India",
+    "type": "Cuisine",
+    "parkingLot": true,
+    "restaurantImage": "https://houseofmg.com/cdn/shop/files/HOUSE_OF_MG_HTA_48_WEB_BANNER.jpg"
+  },
+  {
+    "restaurantID": 28,
+    "restaurantName": "Restaurant 28",
+    "address": "India",
+    "type": "Cuisine",
+    "parkingLot": true,
+    "restaurantImage": "https://q-xx.bstatic.com/xdata/images/hotel/max500/301078538.jpg"
+  },
+  {
+    "restaurantID": 29,
+    "restaurantName": "Restaurant 29",
+    "address": "India",
+    "type": "Cuisine",
+    "parkingLot": true,
+    "restaurantImage": "https://b.zmtcdn.com/data/pictures/1/20061/5e6c5bd3dbbd19cd161bb4a45361676e.jpg"
+  },
+  {
+    "restaurantID": 30,
+    "restaurantName": "Restaurant 30",
+    "address": "India",
+    "type": "Cuisine",
+    "parkingLot": true,
+    "restaurantImage": "https://hungryforever.net/wp-content/uploads/2015/07/benjarong.jpg"
+  },
+  {
+    "restaurantID": 31,
+    "restaurantName": "Restaurant 31",
+    "address": "India",
+    "type": "Cuisine",
+    "parkingLot": true,
+    "restaurantImage": "https://images.squarespace-cdn.com/content/v1/5fcdc5e73b4ad40d4a7d6900/1608618985403-ZTV3MN0WIQW2KHHHTBTV/Britannia2015copyrightIvoDaskalov.jpg"
+  },
+  {
+    "restaurantID": 32,
+    "restaurantName": "Restaurant 32",
+    "address": "India",
+    "type": "Cuisine",
+    "parkingLot": true,
+    "restaurantImage": "https://media.gettyimages.com/id/1228178092/photo/employees-wearing-protective-masks-and-face-shields-clean-inside-the-bukhara-restaurant-at.jpg"
+  },
+  {
+    "restaurantID": 33,
+    "restaurantName": "Restaurant 33",
+    "address": "India",
+    "type": "Cuisine",
+    "parkingLot": true,
+    "restaurantImage": "https://cdn.tasteatlas.com/images/restaurants/ec9ff5c3a72940babcf30df0d9ce9e75.jpg"
+  },
+  {
+    "restaurantID": 34,
+    "restaurantName": "Restaurant 34",
+    "address": "India",
+    "type": "Cuisine",
+    "parkingLot": true,
+    "restaurantImage": "https://b.zmtcdn.com/data/pictures/0/18338820/84d936058e176829a64540044b4d120c.jpg"
+  },
+  {
+    "restaurantID": 35,
+    "restaurantName": "Restaurant 35",
+    "address": "India",
+    "type": "Cuisine",
+    "parkingLot": true,
+    "restaurantImage": "https://assets.simplotel.com/simplotel/image/upload/x_0,y_63,w_1200,h_674,r_0,c_crop,q_80,fl_progressive/w_910,f_auto,c_fit/hotel-hyderabad-grand-shamshabad/HG6A4943_fh2evw"
+  }
+]
