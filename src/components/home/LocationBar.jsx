@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImg from '../../assets/profile.jpg'; // Add your profile image in assets
+import profileImg from '../../assets/profilePlaceholder.jpg'; // Add your profile image in assets
 
 const LocationBar = () => {
   return (
