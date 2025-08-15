@@ -17,11 +17,7 @@ app.use(express.json());
 // Enable CORS
 app.use(
   cors({
-    origin:
-      process.env.NODE_ENV === "production"
-        ? process.env.CLIENT_URL
-        : ["http://localhost:5173", "http://localhost:3000"],
-
+    origin:process.env.CLIENT_URL,
     credentials: true,
   })
 );
