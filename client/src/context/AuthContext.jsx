@@ -26,7 +26,7 @@ export const AuthProvider = ({ children }) => {
 
       const data = await res.json()
       setUser(data.user)
-      console.log(user);
+    
       setIsLoggedIn(true)
     } catch (err) {
       setUser(null)
@@ -111,30 +111,7 @@ export const AuthProvider = ({ children }) => {
     }
   }
 
-  // ---------------------- UPDATE PROFILE ----------------------
-  // const updateProfile = async ({ id, name, email }) => {
-  //   try {
-  //     setLoading(true)
-  //     const res = await fetch(`${BaseUrl}/api/user/update/${id}`, {
-  //       method: "PUT",
-  //       credentials: "include",
-  //       headers: { "Content-Type": "application/json" },
-  //       body: JSON.stringify({ name, email }),
-  //     })
 
-  //     const data = await res.json()
-  //     if (!res.ok) throw new Error(data.message || "Update failed")
-
-  //     setUser(data.user)
-  //     showPopup("Profile updated successfully", "success")
-  //     return true
-  //   } catch (err) {
-  //     showPopup(err.message || "Failed to update profile", "error")
-  //     return false
-  //   } finally {
-  //     setLoading(false)
-  //   }
-  // }
   const updateProfile = async ({ id, name, phone,address, avatar }) => {
     try {
       setLoading(true);

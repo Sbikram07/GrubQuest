@@ -3,22 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Trash2 } from "lucide-react";
 
-const sampleReviews = [
-  {
-    id: "1",
-    restaurant: "Spicy Grill",
-    comment: "Great taste and fast delivery!",
-    rating: 4,
-    date: "2025-07-26",
-  },
-  {
-    id: "2",
-    restaurant: "Tandoori Express",
-    comment: "Could be better. Delivery was late.",
-    rating: 2,
-    date: "2025-07-20",
-  },
-];
+
 
 export default function ReviewsList() {
   return (

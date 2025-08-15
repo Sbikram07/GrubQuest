@@ -13,9 +13,9 @@ const addRestaurant = async (req, res) => {
     const { name, description, address } = req.body;
     const tags=req.body.tags? JSON.parse(req.body.tags):[]
 
-    console.log("Body:", req.body);
-    console.log("File:", req.file);
-    console.log("User Info:", req.userInfo);
+    // console.log("Body:", req.body);
+    // console.log("File:", req.file);
+    // console.log("User Info:", req.userInfo);
 
     if (!name || !address || !req.file) {
       return res.status(400).json({
@@ -28,7 +28,7 @@ const addRestaurant = async (req, res) => {
       req.file.path,
       "GrubQuest/restaurants"
     );
-    console.log("Uploaded Image:", { url, publicId });
+    // console.log("Uploaded Image:", { url, publicId });
 
     const restaurant = await Restaurant.create({
       name,
@@ -181,7 +181,7 @@ const RestaurantByOwner = async (req, res) => {
   try {
     // Ensure the user info exists
     const userId = req.userInfo.id;
-    console.log(req.userInfo);
+    // console.log(req.userInfo);
     // Fetch restaurants where owner matches the logged-in user's ID
     const restaurants = await Restaurant.find({ owner: userId });
 

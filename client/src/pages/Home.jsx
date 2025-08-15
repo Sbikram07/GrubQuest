@@ -28,7 +28,7 @@ export default function Home() {
 
   const handleAddToCart = (id) => {
     const qty = quantities[id] || 1
-    console.log(`Added ${qty} of item ${id} to cart`)
+    // console.log(`Added ${qty} of item ${id} to cart`)
     // The actual cart logic is handled in ItemCard component
   }
 

@@ -35,7 +35,7 @@ export const DeliveryAgentProvider = ({ children }) => {
       })
 
       const data = await handleResponse(res)
-      console.log(data);
+     
 
       setAgentData(data.data.agent)
       setAssignedOrders(data.data.assignedOrders)

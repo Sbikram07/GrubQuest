@@ -25,8 +25,8 @@ const addItem = async (req, res) => {
   try {
     const { name, description, price, category } = req.body;
     const restaurantId = req.params.restaurantId;
-    console.log("body:", name, price, description, category);
-    console.log("file:", req.file);
+    // console.log("body:", name, price, description, category);
+    // console.log("file:", req.file);
 
     if (!name || !price || !category || !req.file) {
       return res.status(400).json({
@@ -55,7 +55,7 @@ const addItem = async (req, res) => {
       item,
     });
   } catch (err) {
-    console.log(err);
+    // console.log(err);
     res.status(500).json({ success: false, message: err.message });
   }
 };
@@ -92,7 +92,7 @@ const updateItem = async (req, res) => {
 
     res.status(200).json({ success: true, message: "Item updated", item });
   } catch (err) {
-    console.log(err);
+    // console.log(err);
     res.status(500).json({ success: false, message: err.message });
   }
 };
@@ -165,7 +165,7 @@ const getItemsByCategory = async (req, res) => {
 const getItemById = async (req, res) => {
   try {
     const itemId = req.params.id;
-    console.log(itemId);
+    // console.log(itemId);
     const item = await Item.findById(itemId).populate("restaurant"); // populate restaurant details
 
     if (!item) {
@@ -173,7 +173,7 @@ const getItemById = async (req, res) => {
         .status(404)
         .json({ success: false, message: "Item not found" });
     }
-    console.log(item);
+    // console.log(item);
     return res.status(200).json({ success: true, item });
   } catch (error) {
     console.error("Error fetching item by ID:", error);

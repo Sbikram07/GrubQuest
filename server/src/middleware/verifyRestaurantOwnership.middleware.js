@@ -33,7 +33,7 @@ const verifyRestaurantOwnership = async (req, res, next) => {
     req.restaurant = restaurant; // pass the restaurant doc to next middleware/controller
     next();
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     return res.status(500).json({ success: false, message: error.message });
   }
 };

@@ -3,50 +3,6 @@ const Restaurant = require("../models/restaurant.model");
 const Item = require("../models/items.model");
 const mongoose=require("mongoose")
 // Create review for item or restaurant
-// const createReview = async (req, res) => {
-//   try {
-//     const { restaurantId, itemId, rating, comment } = req.body;
-//     const userId = req.userInfo.id;
-
-//     if (!rating || (!restaurantId && !itemId)) {
-//       return res.status(400).json({
-//         success: false,
-//         message: "Rating and either restaurantId or itemId is required",
-//       });
-//     }
-
-//     // Optional: prevent duplicate review
-//     const existingReview = await Review.findOne({
-//       user: userId,
-//       ...(restaurantId ? { restaurant: restaurantId } : {}),
-//       ...(itemId ? { item: itemId } : {}),
-//     });
-
-//     if (existingReview) {
-//       return res.status(400).json({
-//         success: false,
-//         message: "You have already reviewed this item/restaurant",
-//       });
-//     }
-
-//     const review = await Review.create({
-//       user: userId,
-//       restaurant: restaurantId || null,
-//       item: itemId || null,
-//       rating,
-//       comment,
-//     });
-
-//     res.status(201).json({
-//       success: true,
-//       message: "Review submitted successfully",
-//       data: review,
-//     });
-//   } catch (error) {
-//     res.status(500).json({ success: false, message: error.message });
-//   }
-// };
-
 
 const createReview = async (req, res) => {
   try {
@@ -89,7 +45,7 @@ const createReview = async (req, res) => {
         { $match: { restaurant: new mongoose.Types.ObjectId(restaurantId) } },
         { $group: { _id: "$restaurant", avgRating: { $avg: "$rating" } } },
       ]);
-      console.log("Restaurant Stats:", stats);
+      // console.log("Restaurant Stats:", stats);
       await Restaurant.findByIdAndUpdate(restaurantId, {
         rating: stats.length > 0 ? stats[0].avgRating : 0,
       });
@@ -98,7 +54,7 @@ const createReview = async (req, res) => {
         { $match: { item: new mongoose.Types.ObjectId(itemId) } },
         { $group: { _id: "$item", avgRating: { $avg: "$rating" } } },
       ]);
-      console.log("Item Stats:", stats);
+      // console.log("Item Stats:", stats);
       await Item.findByIdAndUpdate(itemId, {
         rating: stats.length > 0 ? stats[0].avgRating : 0,
       });

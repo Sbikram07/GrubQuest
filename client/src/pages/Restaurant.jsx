@@ -21,7 +21,7 @@ const Restaurant = () => {
   const [filteredItems, setFilteredItems] = useState([]);
 
   useEffect(() => {
-    console.log("🔁 useEffect triggered with id:", id);
+   
     getRestaurant(id);
     fetchItemsByRestaurant(id);
     fetchReviews();
@@ -50,7 +50,7 @@ const Restaurant = () => {
         credentials: "include",
       });
       const data = await res.json();
-      console.log(data);
+ 
       if (data.success) {
         setReviews(data.data || []);
        

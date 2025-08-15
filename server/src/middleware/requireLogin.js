@@ -16,7 +16,7 @@ const requireLogin = (req, res, next) => {
 
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
- console.log("Decoded JWT:", decoded);
+//  console.log("Decoded JWT:", decoded);
    req.userInfo = {
      id: decoded.id,
      role: decoded.role,

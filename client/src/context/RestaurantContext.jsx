@@ -64,7 +64,7 @@ export const RestaurantProvider = ({ children }) => {
   const getRestaurant = async (id) => {
     try {
       setLoading(true);
-      console.log("triggered");
+    
       const res = await fetch(`${BaseUrl}/api/restaurants/get/${id}`, {
         method: "GET",
         credentials: "include",

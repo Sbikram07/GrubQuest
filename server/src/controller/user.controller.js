@@ -2,32 +2,7 @@ const User = require("../models/user.model");
 const bcrypt = require("bcryptjs");
 const { uploadToCloudinary } = require("../utility/cloudinary.helper");
 
-// // ✅ Update Profile
-// const updateProfile = async (req, res) => {
-//   try {
-//     const userId = req.params.id;
-
-//     // Only allow name, email update
-//     const { name, email } = req.body;
-//     if(req.file){
-//       const {url,publicId}=await uploadToCloudinary(req.file.path,"GrubQuest/avtars")
-//     }
-    
-//     const updatedUser = await User.findByIdAndUpdate(
-//       userId,
-//       { name, email,url,publicId },
-//       { new: true }
-//     ).select("-password");
-
-//     res.status(200).json({
-//       success: true,
-//       message: "User profile updated successfully",
-//       user: updatedUser,
-//     });
-//   } catch (error) {
-//     res.status(500).json({ success: false, message: error.message });
-//   }
-// };
+// ✅ Update Profile
 
 const updateProfile = async (req, res) => {
   try {
@@ -39,7 +14,7 @@ const updateProfile = async (req, res) => {
 
     // If a file is uploaded, upload to Cloudinary
     if (req.file) {
-      console.log(req.file);
+      // console.log(req.file);
       const { url, publicId } = await uploadToCloudinary(
         req.file.path,
         "GrubQuest/avatars"
