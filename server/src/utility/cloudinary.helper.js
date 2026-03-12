@@ -8,7 +8,7 @@ const uploadToCloudinary = async (localPath, folder) => {
    console.log("file uploaded to cloudianry");
   return {
     url: result.secure_url,
-    publicId: result.public_id, // ← this line is probably missing or incorrect
+    publicId: result.public_id,
   };
 };
 
