@@ -119,15 +119,15 @@ const Item = () => {
                       item.category === "veg"
                         ? "bg-green-100 text-green-800"
                         : item.category === "non-veg"
-                        ? "bg-red-100 text-red-800"
-                        : "bg-blue-100 text-blue-800"
+                          ? "bg-red-100 text-red-800"
+                          : "bg-blue-100 text-blue-800"
                     }`}
                   >
-                    {item.category === "veg"
-                      ? "🌱 Vegetarian"
-                      : item.category === "non-veg"
-                      ? "🍖 Non-Vegetarian"
-                      : `📦 ${item.category}`}
+                    {item.category === "Veg"
+                      ? "🟢 Vegetarian"
+                      : item.category === "Non-veg"
+                        ? "🔴 Non-Vegetarian"
+                        : `📦 ${item.category}`}
                   </span>
                   {item.rating && (
                     <span className="flex items-center gap-1 text-yellow-500">
