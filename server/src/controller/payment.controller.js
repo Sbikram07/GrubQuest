@@ -17,8 +17,8 @@ const createCheckoutSession = async (req, res) => {
         },
       ],
       mode: "payment",
-      success_url: `https://grubquest.onrender.com/orders`,
-      cancel_url: `https://grubquest.onrender.com/cart`,
+      success_url: `https://grubquest.vercel.app/orders`,
+      cancel_url: `https://grubquest.vercel.app/cart`,
       //   metadata: {
       //     billId,
       //   },
