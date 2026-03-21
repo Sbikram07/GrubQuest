@@ -5,6 +5,7 @@ import { useOrder } from "@/context/OrderContext"
 import { useAuth } from "@/context/AuthContext"
 import { useCart } from "../hooks/useCart"
 import { useState } from "react"
+const BaseUrl = import.meta.env.VITE_BASE_API_URL;
 
 export default function Cart() {
   const { placeOrder, loading } = useOrder()
@@ -75,7 +76,39 @@ export default function Cart() {
       </>
     )
   }
+  const handleCheckout=async()=>{
+    if (!user) {
+      alert("Please login to place order");
+      return;
+    }
 
+    if (!deliveryAddress.trim()) {
+      alert("Please enter delivery address");
+      return;
+    }
+
+    if (cartItems.length === 0) {
+      alert("Cart is empty");
+      return;
+    }
+
+    try{
+      const res=await fetch(`${BaseUrl}/api/payment/create-payment`,{
+        method:"POST",
+        headers:{"Content-Type":"application/json"},
+        credentials:"include",
+        body:JSON.stringify({          
+          amount:totalAmount + 40+totalAmount*0.05})
+      })
+      const data=await res.json();
+       await handlePlaceOrder();
+      window.location.href=data.url
+
+    }catch(error){
+      alert(`Checkout Failed:${error.message}`);
+    }
+
+  }
   return (
     <>
       <Navbar1 />
@@ -84,7 +117,9 @@ export default function Cart() {
 
         {/* Delivery Address */}
         <div className="mb-6 p-4 bg-gray-50 rounded-lg">
-          <label className="block text-sm font-medium mb-2">Delivery Address *</label>
+          <label className="block text-sm font-medium mb-2">
+            Delivery Address *
+          </label>
           <textarea
             value={deliveryAddress}
             onChange={(e) => setDeliveryAddress(e.target.value)}
@@ -111,7 +146,11 @@ export default function Cart() {
             key={item.id}
             className="grid grid-cols-[80px_1fr_100px_120px_100px_80px] gap-6 items-center py-4 border-b"
           >
-            <img src={item.image || "/placeholder.svg"} alt={item.name} className="w-16 h-16 object-cover rounded" />
+            <img
+              src={item.image || "/placeholder.svg"}
+              alt={item.name}
+              className="w-16 h-16 object-cover rounded"
+            />
             <div>
               <h3 className="font-medium">{item.name}</h3>
               <p className="text-sm text-gray-500">{item.restaurantName}</p>
@@ -132,8 +171,13 @@ export default function Cart() {
                 +
               </button>
             </div>
-            <p className="text-center font-medium">₹{item.price * item.quantity}</p>
-            <button onClick={() => removeFromCart(item.id)} className="text-red-500 hover:text-red-700 text-center">
+            <p className="text-center font-medium">
+              ₹{item.price * item.quantity}
+            </p>
+            <button
+              onClick={() => removeFromCart(item.id)}
+              className="text-red-500 hover:text-red-700 text-center"
+            >
               ✕
             </button>
           </div>
@@ -151,17 +195,25 @@ export default function Cart() {
                 <span>Delivery Fee:</span>
                 <span>₹40</span>
               </div>
+              <div className="flex justify-between">
+                <span>Platform Fee:</span>
+                <span>₹{totalAmount*0.05}</span>
+              </div>
               <div className="flex justify-between font-bold text-lg border-t pt-2">
                 <span>Total:</span>
-                <span>₹{totalAmount + 40}</span>
+                <span>₹{totalAmount + 40+totalAmount*0.05}</span>
               </div>
             </div>
-            <Button onClick={handlePlaceOrder} className="w-full" disabled={loading || !deliveryAddress.trim()}>
+            <Button
+              onClick={handleCheckout}
+              className="w-full"
+              disabled={loading || !deliveryAddress.trim()}
+            >
               {loading ? "Placing Order..." : "Place Order"}
             </Button>
           </div>
         </div>
       </div>
     </>
-  )
+  );
 }

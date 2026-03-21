@@ -7,6 +7,7 @@ const orderRoute = require("./src/routes/order.route");
 const userRoute = require("./src/routes/user.route");
 const reviewRoute = require("./src/routes/review.route");
 const deliveryAgentRoute = require("./src/routes/deliveryAgent.route");
+const paymentRoute = require("./src/routes/payment.route")
 const cookieParser = require("cookie-parser");
 const app = express();
 const cors = require("cors");
@@ -30,6 +31,7 @@ app.use("/api/review", reviewRoute);
 app.use("/api/order", orderRoute);
 app.use("/api/user", userRoute);
 app.use("/api/delivery-agent", deliveryAgentRoute);
+app.use("/api/payment",paymentRoute);
 
 // Health check
 app.get("/api/health", (req, res) => {

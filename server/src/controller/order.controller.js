@@ -80,6 +80,7 @@ const placeOrder = async (req, res) => {
       }
 
       totalPrice += itemDoc.price * i.quantity;
+      
 
       orderItems.push({
         item: itemDoc._id,
@@ -99,6 +100,7 @@ const placeOrder = async (req, res) => {
       restaurant: restaurantId,
       items: orderItems,
       totalPrice,
+      paymentStatus: "Paid",
       deliveryAddress,
       deliveryAgent: availableAgent?._id || null,
       assignedAt: availableAgent ? new Date() : null,
