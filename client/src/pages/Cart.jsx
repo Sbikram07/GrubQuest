@@ -101,7 +101,7 @@ export default function Cart() {
           amount:totalAmount + 40+totalAmount*0.05})
       })
       const data=await res.json();
-       await handlePlaceOrder();
+       handlePlaceOrder();
       window.location.href=data.url
 
     }catch(error){
