@@ -71,17 +71,17 @@ function App() {
           <Route
             path="/success"
             element={
-              // <ProtectedRoute>
+              <ProtectedRoute>
                 <Success />
-              // </ProtectedRoute>
+               </ProtectedRoute>
             }
           />
           <Route
             path="/canceled"
             element={
-              // <ProtectedRoute>
+              <ProtectedRoute>
                 <Canceled />
-              // </ProtectedRoute>
+               </ProtectedRoute>
             }
           />
         </Routes>
