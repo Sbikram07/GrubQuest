@@ -8,7 +8,7 @@ import { useState } from "react"
 const BaseUrl = import.meta.env.VITE_BASE_API_URL;
 
 export default function Cart() {
-  const { placeOrder, loading } = useOrder()
+  const {  loading } = useOrder()
   const { user } = useAuth()
   const { cartItems, updateQuantity, removeFromCart, clearCart, getCartTotal , getAddress, clearAddress,saveAddress} = useCart()
   const [deliveryAddress, setDeliveryAddress] = useState(getAddress()||"")
