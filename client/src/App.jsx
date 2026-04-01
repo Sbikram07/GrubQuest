@@ -12,6 +12,8 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import RestaurantDashboard from "./pages/RestaurantDashboard";
 import AgentDashboard from "./pages/AgentDashboard";
+import Success from "./pages/Success";
+import Canceled from "./pages/Canceled";
 
 function App() {
   return (
@@ -64,6 +66,22 @@ function App() {
               <ProtectedRoute requiredRole="deliveryAgent">
                 <AgentDashboard />
               </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/success"
+            element={
+              // <ProtectedRoute>
+                <Success />
+              // </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/canceled"
+            element={
+              // <ProtectedRoute>
+                <Canceled />
+              // </ProtectedRoute>
             }
           />
         </Routes>

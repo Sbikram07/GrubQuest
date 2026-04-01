@@ -10,57 +10,57 @@ const BaseUrl = import.meta.env.VITE_BASE_API_URL;
 export default function Cart() {
   const { placeOrder, loading } = useOrder()
   const { user } = useAuth()
-  const { cartItems, updateQuantity, removeFromCart, clearCart, getCartTotal } = useCart()
-  const [deliveryAddress, setDeliveryAddress] = useState("")
+  const { cartItems, updateQuantity, removeFromCart, clearCart, getCartTotal , getAddress, clearAddress,saveAddress} = useCart()
+  const [deliveryAddress, setDeliveryAddress] = useState(getAddress()||"")
 
   const totalAmount = getCartTotal()
 
-  const handlePlaceOrder = async () => {
-    if (!user) {
-      alert("Please login to place order")
-      return
-    }
+  // const handlePlaceOrder = async () => {
+  //   if (!user) {
+  //     alert("Please login to place order")
+  //     return
+  //   }
 
-    if (!deliveryAddress.trim()) {
-      alert("Please enter delivery address")
-      return
-    }
+  //   if (!deliveryAddress.trim()) {
+  //     alert("Please enter delivery address")
+  //     return
+  //   }
 
-    if (cartItems.length === 0) {
-      alert("Cart is empty")
-      return
-    }
+  //   if (cartItems.length === 0) {
+  //     alert("Cart is empty")
+  //     return
+  //   }
 
-    // Group items by restaurant
-    const ordersByRestaurant = {}
-    cartItems.forEach((item) => {
-      const restaurantId = item.restaurantId
-      if (!ordersByRestaurant[restaurantId]) {
-        ordersByRestaurant[restaurantId] = []
-      }
-      ordersByRestaurant[restaurantId].push({
-        itemId: item.id,
-        quantity: item.quantity,
-        price: item.price,
-      })
-    })
+  //   // Group items by restaurant
+  //   const ordersByRestaurant = {}
+  //   cartItems.forEach((item) => {
+  //     const restaurantId = item.restaurantId
+  //     if (!ordersByRestaurant[restaurantId]) {
+  //       ordersByRestaurant[restaurantId] = []
+  //     }
+  //     ordersByRestaurant[restaurantId].push({
+  //       itemId: item.id,
+  //       quantity: item.quantity,
+  //       price: item.price,
+  //     })
+  //   })
 
-    // Place orders for each restaurant
-    try {
-      for (const [restaurantId, items] of Object.entries(ordersByRestaurant)) {
-        await placeOrder({
-          restaurantId,
-          items,
-          deliveryAddress,
-        })
-      }
+  //   // Place orders for each restaurant
+  //   try {
+  //     for (const [restaurantId, items] of Object.entries(ordersByRestaurant)) {
+  //       await placeOrder({
+  //         restaurantId,
+  //         items,
+  //         deliveryAddress,
+  //       })
+  //     }
 
-      // Clear cart after successful order
-      clearCart()
-    } catch (error) {
-      console.error("Failed to place order:", error)
-    }
-  }
+  //     // Clear cart after successful order
+  //     clearCart()
+  //   } catch (error) {
+  //     console.error("Failed to place order:", error)
+  //   }
+  // }
 
   if (cartItems.length === 0) {
     return (
@@ -101,7 +101,7 @@ export default function Cart() {
           amount:totalAmount + 40+totalAmount*0.05})
       })
       const data=await res.json();
-       handlePlaceOrder();
+       
       window.location.href=data.url
 
     }catch(error){
@@ -122,7 +122,7 @@ export default function Cart() {
           </label>
           <textarea
             value={deliveryAddress}
-            onChange={(e) => setDeliveryAddress(e.target.value)}
+            onChange={(e) => {setDeliveryAddress(e.target.value);saveAddress(deliveryAddress)}}
             placeholder="Enter your complete delivery address..."
             className="w-full p-3 border rounded-lg resize-none"
             rows={3}
