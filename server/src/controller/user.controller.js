@@ -2,7 +2,7 @@ const User = require("../models/user.model");
 const bcrypt = require("bcryptjs");
 const { uploadToCloudinary } = require("../utility/cloudinary.helper");
 
-// ✅ Update Profile
+// Update Profile
 
 const updateProfile = async (req, res) => {
   try {
@@ -41,7 +41,7 @@ const updateProfile = async (req, res) => {
 };
 
 
-// ✅ Delete Profile
+//  Delete Profile
 const deleteProfile = async (req, res) => {
   try {
     const userId = req.params.id;
@@ -57,7 +57,7 @@ const deleteProfile = async (req, res) => {
   }
 };
 
-// ✅ Change Password
+// Change Password
 const changePassword = async (req, res) => {
   try {
     const userId = req.params.id;
